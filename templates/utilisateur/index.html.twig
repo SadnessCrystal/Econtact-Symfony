@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello UtilisateurController!
+{% endblock %}
+
+{% block body %}
+
+	<h3>
+		Formulaire d'authentification
+	</h3>
+
+	<form action="index.php?controle=utilisateur&action=ident" method="post">
+
+		<input name="nom" type="text" value="{{no}}"/>
+		Nom
+		<br/>
+
+		<input name="num" type="text" value="{{nu}}"/>
+		Matricule
+		<br/>
+
+		<input type="submit" value="soumettre">
+	</form>
+
+{% endblock %}
